@@ -279,3 +279,86 @@ Shortcode `mbcontroller`
          }
      
      }
+
+##Magento 2 jQuery Plugin Template
+ 
+Shortcode `mjquery`
+ 
+
+    ;require(['jquery'], function ($) {
+    
+        /**
+         * Declare a namespace if it doesn't already
+         * exist.
+         */
+        if (!$.$COMPANY$) {
+            $.$COMPANY$ = {};
+        }
+    
+        /**
+         * Colour switching plugin declaration.
+         *
+         * @param element
+         * @param  options
+         * @constructor
+         */
+        $.$COMPANY$.$MODULE$ = function (element, options) {
+    
+            /**
+             * This variable is used because it's
+             * easier than binding `this`
+             *
+             * @type {$.$COMPANY$.$MODULE$}
+             */
+            var base = this;
+    
+            /**
+             * Accessor to the element we are manipulating.
+             *
+             * @type {*|jQuery|HTMLElement}
+             */
+            base.$element = $(element);
+            base.element = element;
+    
+            /**
+             * Add a reverse reference to the plugin.
+             */
+            base.$element.data("$COMPANY$.$MODULE$", base);
+    
+            /**
+             * Plugin constructor
+             */
+            base.init = function () {
+                base.options = $.extend({}, $.$COMPANY$.$MODULE$.defaultOptions, options);
+    
+            };
+    
+            /**
+             * Initialize the plugin.
+             */
+            base.init();
+        };
+    
+        /**
+         * Default options for the plugin.
+         *
+         * @type
+         */
+        $.$COMPANY$.$MODULE$.defaultOptions = {};
+    
+        /**
+         * Setup the plugin, this will override the default
+         * options with the object passed in instantiation.
+         *
+         * @constructor
+         *
+         * @param options
+         */
+        $.fn.$COMPANY$_$MODULE$ = function
+            (options) {
+            return this.each(function () {
+                (new $.$COMPANY$.$MODULE$(this, options));
+            });
+        };
+    
+    });
