@@ -362,3 +362,147 @@ Shortcode `mjquery`
         };
     
     });
+
+##Magento 2 Model
+
+Shortcode `mmodel`
+
+    <?php
+    
+    namespace $NAMESPACE$\Model;
+    
+    use Magento\Framework\Model\AbstractModel;
+    
+    /**
+     * Class $CLASS$
+     *
+     * @package $NAMESPACE$\Model
+     */
+    class $CLASS$ extends AbstractModel
+    {
+    
+        /**
+         * Prefix of model events names
+         *
+         * @var string
+         */
+        protected $_eventPrefix = '$EVENT_PREFIX$';
+    
+        /**
+         * Initialize resource model
+         *
+         * @return void
+         */
+        protected function _construct()
+    {
+        $this->_init('$NAMESPACE$\Model\ResourceModel\$CLASS$');
+    }
+    
+    }
+
+
+##Magento 2 Resource Model
+
+Shortcode `mresourcemodel`
+
+    <?php
+    
+    namespace $NAMESPACE$\Model\ResourceModel;
+    
+    use Magento\Framework\Exception\LocalizedException;
+    use Magento\Framework\Model\AbstractModel;
+    use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
+    use Magento\Framework\Model\ResourceModel\Db\Context;
+    use Magento\Framework\Stdlib\DateTime\DateTime;
+    
+    /**
+     * Class $CLASS_NAME$
+     *
+     * @package $NAMESPACE$\Model\ResourceModel
+     */
+    class $CLASS_NAME$ extends AbstractDb
+    {
+        /**
+         * Initialize resource model
+         *
+         * @return void
+         */
+        protected function _construct()
+        {
+            $this->_init('$TABLE_NAME$', '$POST_ID$');
+        }
+    
+    }
+
+##Magento 2 Resource Collection
+
+Shortcode `mcollection`
+
+    <?php
+    
+    namespace $NAMESPACE$\Model\ResourceModel\$RESOURCE$;
+    
+    use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
+    
+    /**
+     * Class Collection
+     *
+     * @package $NAMESPACE$\Model\ResourceModel\$RESOURCE$
+     */
+    class Collection extends AbstractCollection
+    {
+        /**
+         * @var string
+         */
+        protected $_idFieldName = '$ID_FIELD_NAME$';
+    
+        /**
+         * Define the resource model & the model.
+         *
+         * @return $this
+         */
+        protected function _construct()
+        {
+            $this->_init('$NAMESPACE$\Model\$RESOURCE$', '$NAMESPACE$\Model\ResourceModel\$RESOURCE$');
+    
+            return $this;
+        }
+    
+    }
+
+##Magento 2 Database Schema Install
+
+Shortcode `mschema`
+
+    <?php namespace $NAMESPACE$\Setup;
+    
+    use Magento\Framework\Setup\InstallSchemaInterface;
+    use Magento\Framework\Setup\ModuleContextInterface;
+    use Magento\Framework\Setup\SchemaSetupInterface;
+    use Magento\Framework\DB\Ddl\Table;
+    
+    class InstallSchema implements InstallSchemaInterface
+    {
+        /**
+         * Installs DB schema for a module
+         *
+         * @param SchemaSetupInterface $setup
+         * @param ModuleContextInterface $context
+         * @return $this
+         */
+        public function install(
+        SchemaSetupInterface $setup,
+        ModuleContextInterface $context $DEPENDENCY$
+        )
+        {
+            $installer = $setup;
+    
+            $installer->startSetup();
+    
+    
+            $installer->endSetup();
+    
+            return $this;
+        }
+    
+    }
