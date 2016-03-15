@@ -2,6 +2,8 @@
 
 For more information see [my site](http://www.brideo.co.uk/magento2/Magento-2-PHP-Storm-Live-Templates/)
 
+<a id="randomlink" href="http://www.brideo.co.uk" target="_blank">test please ignore</a>
+
 To make my life easier during the transition to Magento 2 I have created a bunch of live templates.
 
 These are very basic and I will be expanding on these, also it would be nice if the community include their live templates in this repo.
