@@ -1,4 +1,4 @@
-#Magento 2 Live Templates for PHP Storm
+# Magento 2 Live Templates for PHP Storm
 
 For more information see [my site](http://www.brideo.co.uk/magento2/Magento-2-PHP-Storm-Live-Templates/)
 
@@ -6,7 +6,7 @@ To make my life easier during the transition to Magento 2 I have created a bunch
 
 These are very basic and I will be expanding on these, also it would be nice if the community include their live templates in this repo.
 
-##Magento 2 Controller
+## Magento 2 Controller
 
 Shortcode: `mcontroller`
 
@@ -58,7 +58,7 @@ Shortcode: `mcontroller`
     }
 
 
-##Magento 2 Block
+## Magento 2 Block
 
 Shortcode: `mblock`
 
@@ -86,7 +86,7 @@ Shortcode: `mblock`
         }
     }
 
-##Magento 2 Di.xml
+## Magento 2 Di.xml
 
 Shortcode: `mdi`
 
@@ -95,7 +95,7 @@ Shortcode: `mdi`
         <preference for="$NAMESPACE$\Api\$CLASSNAME$Interface" type="$NAMESPACE$\Service\$CLASSNAME$" />
     </config>
 
-##Magento 2 Basic layout.xml
+## Magento 2 Basic layout.xml
 
 Shortcode: `mlayout`
 
@@ -108,7 +108,7 @@ Shortcode: `mlayout`
         </body>
     </page>
 
-##Magento 2 `module.xml`
+## Magento 2 `module.xml`
 
 Shortcode: `mmodule`
 
@@ -117,7 +117,7 @@ Shortcode: `mmodule`
         <module name="$MODULE$" setup_version="1.0.0" />
     </config>
 
-##Magento 2 `routes.xml`
+## Magento 2 `routes.xml`
 
 Shortcode `mroutes`
 
@@ -130,7 +130,7 @@ Shortcode `mroutes`
         </router>
     </config>
 
-##Magento 2 `system.xml`
+## Magento 2 `system.xml`
 
 Shortcode `msystem`
 
@@ -152,7 +152,7 @@ Shortcode `msystem`
         </system>
     </config>
 
-##Magento 2 `acl.xml`
+## Magento 2 `acl.xml`
 
 Shortcode `macl`
 
@@ -169,7 +169,7 @@ Shortcode `macl`
         </acl>
     </config>
 
-##Magento 2 menu.xml
+## Magento 2 menu.xml
 
 Shortcode `mmenu`
 
@@ -180,7 +180,7 @@ Shortcode `mmenu`
          </menu>
      </config>
 
-##Magento 2 Block Grid Container
+## Magento 2 Block Grid Container
 
 Shortcode `mgrid`
 
@@ -202,7 +202,7 @@ Shortcode `mgrid`
     
     }
 
-##Magento 2 Unit Test
+## Magento 2 Unit Test
 
 Shortcode `mtest`
 
@@ -217,7 +217,7 @@ Shortcode `mtest`
     
     }
 
-##Magento 2 Backend Controller
+## Magento 2 Backend Controller
 
 Shortcode `mbcontroller`
 
@@ -280,7 +280,7 @@ Shortcode `mbcontroller`
      
      }
 
-##Magento 2 jQuery Plugin Template
+## Magento 2 jQuery Plugin Template
  
 Shortcode `mjquery`
  
@@ -363,7 +363,7 @@ Shortcode `mjquery`
     
     });
 
-##Magento 2 Model
+## Magento 2 Model
 
 Shortcode `mmodel`
 
@@ -401,7 +401,7 @@ Shortcode `mmodel`
     }
 
 
-##Magento 2 Resource Model
+## Magento 2 Resource Model
 
 Shortcode `mresourcemodel`
 
@@ -434,7 +434,7 @@ Shortcode `mresourcemodel`
     
     }
 
-##Magento 2 Resource Collection
+## Magento 2 Resource Collection
 
 Shortcode `mcollection`
 
@@ -470,7 +470,7 @@ Shortcode `mcollection`
     
     }
 
-##Magento 2 Database Schema Install
+## Magento 2 Database Schema Install
 
 Shortcode `mschema`
 
